@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AbisZ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .tooltip {
+    position: relative;
+    }
+    .displayText {
+    position: absolute;
+    width: 220px;
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 4px;
+    margin-left: -202px;
+    padding: 8px 0;
+    visibility: hidden;
+    }
+    .displayText::before {
+    position: absolute;
+    }
+    .show {
+    visibility: visible;
+    }
+</style>
+</head>
+<body class="bg-black">
+<div class="bg-gray-300 border-2 border-gray-600 rounded-lg content-center w-64 mt-16 ml-32 p-2">
+<div class="tooltip sticky top-0 float-right" onclick="getMyToolTipFunction()"><img src="img/help02.svg" alt="">
+<span class="displayText" id="displayText"><span class="font-bold">A bis Z</span><br><hr><span class="text-base">Ein Zufallsgenerator um einen Buchstaben aus dem deutschen Alphabet auszuwählen.<br>(Ohne Umlaute und Eszett)<br>Hilfreich bei Stadt-Land-Fluss.</span></span>
+</div>
+<p class="text-9xl text-center font-bold mt-1 mb-10" id="ausgabeTest">A</p>
+<div class="center">
+<button id="startbutton" class="border-2 border-black rounded-lg bg-green-300 font-semibold cursor-pointer w-48 mx-5 mb-4 pt-4 pb-4" onclick="startSalat()">Start</button>
+</div>
+<div>
+<button id="stopbutton" class="object-center border-2 border-black rounded-lg bg-red-300 font-semibold w-48 mx-5 mb-6 pt-4 pb-4" onclick="stopSalat()">Stop</button>
+</div>
+</div>
+<script>
+function startSalat() {
+    buchstaben = setInterval(function() {
+    document.getElementById("startbutton").disabled = true;
+    const box = document.getElementById('ausgabeTest');
+    const a = [];
+    let AusgabeZahl = a[0];
+    const ausgabe = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+        for (let i = 0; i < 26; i++) {
+            a[i] = Math.floor(Math.random() * 25);
+            AusgabeZahl = a[i];
+            box.textContent = ausgabe[AusgabeZahl];      
+            }
+        }, 150);
+    }
+
+function stopSalat() {
+    clearInterval(buchstaben);
+    document.getElementById("startbutton").disabled = false;
+    }
+
+function getMyToolTipFunction () {
+    let popup = document.getElementById("displayText");
+    popup.classList.toggle("show");
+    }
+</script>
+</body>
