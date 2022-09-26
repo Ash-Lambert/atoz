@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>A bis Z</title>
+<link rel="shortcut icon" href="../icon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/newstyle.css">
+</head>
+<body>
+<div class="azDiv">
+<p class="azAusgabe" id="ausgabeTest">A</p>
+<div class="azMargin">
+<button id="startbutton" class="azButtonStart" onclick="startSalat()">Start</button>
+</div>
+<div>
+<button id="stopbutton" class="azButtonStop" onclick="stopSalat()">Stop</button>
+</div>
+</div>
+<script>
+
+function startSalat() {
+    buchstaben = setInterval(function() {
+    document.getElementById("startbutton").disabled = true;
+    const a = [];
+    let AusgabeZahl = a[0];
+
+        for (let i = 0; i < 26; i++) {
+
+            a[i] = Math.floor(Math.random() * 25);
+            AusgabeZahl = a[i];
+
+            switch (AusgabeZahl) {
+                case 1:
+                document.getElementById("ausgabeTest").innerHTML = "A";
+                    break;
+                case 2:
+                document.getElementById("ausgabeTest").innerHTML = "B";
+                    break;
+                case 3:
+                document.getElementById("ausgabeTest").innerHTML = "C";
+                    break;
+                case 4:
+                document.getElementById("ausgabeTest").innerHTML = "D";
+                    break;
+                case 5:
+                document.getElementById("ausgabeTest").innerHTML = "E";
+                    break;
+                case 6:
+                document.getElementById("ausgabeTest").innerHTML = "F";
+                    break;
+                case 7:
+                document.getElementById("ausgabeTest").innerHTML = "G";
+                    break;
+                case 8:
+                document.getElementById("ausgabeTest").innerHTML = "H";
+                    break;
+                case 9:
+                document.getElementById("ausgabeTest").innerHTML = "I";
+                    break;
+                case 10:
+                document.getElementById("ausgabeTest").innerHTML = "J";
+                    break;
+                case 11:
+                document.getElementById("ausgabeTest").innerHTML = "K";
+                    break;
+                case 12:
+                document.getElementById("ausgabeTest").innerHTML = "L";
+                    break;
+                case 13:
+                document.getElementById("ausgabeTest").innerHTML = "M";
+                    break;
+                case 14:
+                document.getElementById("ausgabeTest").innerHTML = "N";
+                    break;
+                case 15:
+                document.getElementById("ausgabeTest").innerHTML = "O";
+                    break;
+                case 16:
+                document.getElementById("ausgabeTest").innerHTML = "P";
+                    break;
+                case 17:
+                document.getElementById("ausgabeTest").innerHTML = "Q";
+                    break;
+                case 18:
+                document.getElementById("ausgabeTest").innerHTML = "R";
+                    break;
+                case 19:
+                document.getElementById("ausgabeTest").innerHTML = "S";
+                    break;
+                case 20:
+                document.getElementById("ausgabeTest").innerHTML = "T";
+                    break;
+                case 21:
+                document.getElementById("ausgabeTest").innerHTML = "U";
+                    break;
+                case 22:
+                document.getElementById("ausgabeTest").innerHTML = "V";
+                    break;
+                case 23:
+                document.getElementById("ausgabeTest").innerHTML = "W";
+                    break;
+                case 24:
+                document.getElementById("ausgabeTest").innerHTML = "X";
+                    break;
+                case 25:
+                document.getElementById("ausgabeTest").innerHTML = "Y";
+                    break;
+                case 26:
+                document.getElementById("ausgabeTest").innerHTML = "Z";
+                    break;
+                }
+         }
+    }, 150);
+}
+
+//startSalat();
+//clearInterval(buchstaben);
+
+function stopSalat() {
+    clearInterval(buchstaben);
+    document.getElementById("startbutton").disabled = false;
+}
+
+</script>
+</body>
+</html>
