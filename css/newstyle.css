@@ -62,7 +62,7 @@ body {background-color: #2b3561; font-family: arial;}
     border-radius: 6px;
     margin-top: 4px;
     margin-left: -250px;
-    padding: 8px 0;
+    padding: 8px;
     visibility: hidden;
     }
 .displayText::before {
@@ -72,8 +72,13 @@ body {background-color: #2b3561; font-family: arial;}
     visibility: visible;
     }
 .horizontalRow {
+	width: 200px;
 	height: 1px;
-	color: #FFFFFF;
+	background-color: #FFFFFF;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Tablet menu */
@@ -148,6 +153,13 @@ body {background-color: #393d74; font-family: arial;}
 .show {
 	visibility: visible;
 	}
+}
+.horizontalRow {
+	width: 200px;
+	height: 1px;
+	background-color: #FFFFFF;
+	margin-left: auto;
+ 	margin-right: auto;
 }
 /* Desktop menu */
 @media all and (min-width: 960px) {
