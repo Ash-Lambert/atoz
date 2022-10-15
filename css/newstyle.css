@@ -1,6 +1,51 @@
 /* Basic styling */
-body {background-color: #2b3561; font-family: arial;}
+body {background-color: #2b3561;}
 * {box-sizing: border-box;}
+/* lato-regular - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/lato-v23-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('fonts/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('fonts/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('fonts/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('fonts/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+  }
+  
+  /* lato-700 - latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/lato-v23-latin-700.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('fonts/lato-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('fonts/lato-v23-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('fonts/lato-v23-latin-700.woff') format('woff'), /* Modern Browsers */
+		 url('fonts/lato-v23-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('fonts/lato-v23-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+  }
+  
+  /* lato-900 - latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/lato-v23-latin-900.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('fonts/lato-v23-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('fonts/lato-v23-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('fonts/lato-v23-latin-900.woff') format('woff'), /* Modern Browsers */
+		 url('fonts/lato-v23-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('fonts/lato-v23-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
+  }
+  
+  
+  
+
 .azDiv {
 	margin: auto;
 	width: 90%;
@@ -31,7 +76,6 @@ body {background-color: #2b3561; font-family: arial;}
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
 	font-weight: bold;
 	font-size: 40px;
 	}
@@ -44,7 +88,7 @@ body {background-color: #2b3561; font-family: arial;}
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+
 	font-weight: bold;
 	font-size: 40px;
 	}
@@ -80,6 +124,33 @@ body {background-color: #2b3561; font-family: arial;}
 	margin-left: auto;
 	margin-right: auto;
 }
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: normal;
+	align-items: normal;
+	align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+	display: block;
+	min-width: 190px;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
 
 /* Tablet menu */
 @media all and (min-width: 700px) {
@@ -161,6 +232,32 @@ body {background-color: #393d74; font-family: arial;}
 	margin-left: auto;
  	margin-right: auto;
 }
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: normal;
+	align-items: normal;
+	align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 1;
+  }
 /* Desktop menu */
 @media all and (min-width: 960px) {
 	body {background-color: #3a3a3a; font-family: arial;}
@@ -245,4 +342,30 @@ body {background-color: #393d74; font-family: arial;}
 	margin-left: auto;
  	margin-right: auto;
 }
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: normal;
+	align-items: normal;
+	align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
 }
