@@ -22,11 +22,11 @@
     <div class="azAusgabe" id="ausgabeTest">A</div>
 </div>
 <div class="flex-items buttons">
-<div class="azMargin">
-<button id="startbutton" class="azButtonStart" onclick="startSalat()">Start</button>
-</div>
+    <div class="azMargin">
+        <button id="startButton" class="azButtonStart" onclick="startSalat()">Start</button>
+    </div>
 <div>
-<button id="stopbutton" class="azButtonStop" onclick="stopSalat()">Stop</button>
+    <button id="stopbutton" class="azButtonStop" onclick="stopSalat()">Stop</button>
 </div>
 </div>
 </div>
@@ -34,7 +34,7 @@
 <script>
     function startSalat() {
         buchstaben = setInterval(function() {
-        document.getElementById("startbutton").disabled = true;
+        document.getElementById("startButton").disabled = true;
         const box = document.getElementById('ausgabeTest');
         const a = [];
         let AusgabeZahl = a[0];
@@ -50,7 +50,7 @@
     
     function stopSalat() {
         clearInterval(buchstaben);
-        document.getElementById("startbutton").disabled = false;
+        document.getElementById("startButton").disabled = false;
         }
     
     function Info() {

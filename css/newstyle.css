@@ -5,9 +5,9 @@
 	font-weight: 400;
 	src: url('../fonts/lato-v23-latin-regular.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('../fonts/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 		 url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
 		 url('../fonts/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 		 url('../fonts/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 		 url('../fonts/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
   }
@@ -19,9 +19,9 @@
 	font-weight: 700;
 	src: url('../fonts/lato-v23-latin-700.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('../fonts/lato-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+	     url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
 		 url('../fonts/lato-v23-latin-700.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lato-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 		 url('../fonts/lato-v23-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
 		 url('../fonts/lato-v23-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
   }
@@ -33,9 +33,9 @@
 	font-weight: 900;
 	src: url('../fonts/lato-v23-latin-900.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('../fonts/lato-v23-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 		 url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
 		 url('../fonts/lato-v23-latin-900.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/lato-v23-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 		 url('../fonts/lato-v23-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
 		 url('../fonts/lato-v23-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
   }
@@ -372,7 +372,7 @@ body {background-color: #482e50; font-family: Lato;}
   margin: auto;
   margin-top: 2%;
   width: 90%;
-  height: 60vh;
+  height: 70vh;
   background: linear-gradient(to bottom, #c2bec2 0%, #4d474d 100%);
   border-radius: 12px;
   padding-bottom: 10px;
@@ -383,13 +383,13 @@ body {background-color: #482e50; font-family: Lato;}
   margin-bottom: 48px;
 }
 .azAusgabe {
-	order: 1;
+  order: 1;
   text-align: center;
   font-weight: 900;
   color: #2c2c2c;
   font-size: 260px;
   margin: auto;
-  margin-top: 6%;
+  margin-top: 2%;
   }
 .buttons{
 	order: 2;
@@ -486,6 +486,7 @@ body {background-color: #482e50; font-family: Lato;}
 	margin: auto;
 	margin-top: 40px;
 	width: 60%;
+	height: 40vh;
 	background-color: #ebebeb98;
 	border-radius: 12px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -499,7 +500,7 @@ body {background-color: #482e50; font-family: Lato;}
 	font-weight: 900;
 	color: #000000;
 	font-size: 220px;
-	margin-top: 14%;
+	margin-top: 2%;
 	margin-bottom: 16px;
 	}
 .azButtonStart {
